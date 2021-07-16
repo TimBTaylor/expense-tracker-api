@@ -1,0 +1,43 @@
+
+
+POST http://localhost:3000/user
+Content-Type: application/json
+
+{
+    "name": "user post",
+    "password": "user password"
+}
+
+###
+
+GET http://localhost:3000/60f0d1616a8fe40d8aaad754
+
+###
+
+POST http://localhost:3000/60f0e31750fe7f100c02ec5b/addtransaction
+Content-Type: application/json
+
+{
+    "transaction": {
+        "transactionType": "meijer",
+        "transactionAmount": "-50"
+    }
+}
+
+### 
+
+POST http://localhost:3000/60f0d1616a8fe40d8aaad754
+Content-Type: application/json
+
+{
+    "username": "updated username",
+    "password": "updated password"
+}
+
+### 
+
+DELETE  http://localhost:3000/60f0e2ae8d06b80ff370c17b
+
+###
+
+GET http://localhost:3000/allusers
