@@ -7,7 +7,7 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 const User = require("../models/user");
 
-mongoose.connect(process.env.DATABASE_URL, {
+mongoose.connect(process.env.CONNECTION_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
