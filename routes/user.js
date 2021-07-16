@@ -3,18 +3,6 @@ const router = express.Router();
 
 const User = require("../models/user");
 
-app.use((res, res, next) => {
-  res.header("Access-Control-Allow-Origin", "*");
-  res.header("Access-Control-Allow-Headers", "*");
-
-  if (req.method === "OPTIONS") {
-    res.header("Access-Control-Allow-Methods", "PUT, POST, PATCH, DELETE, GET");
-    return set.status(200).json({});
-  }
-
-  next();
-});
-
 //create user
 router.post("/user", async (req, res) => {
   const user = new User({
