@@ -1,6 +1,6 @@
 
 
-POST http://localhost:3000/user
+POST https://expensetrackerbytim.herokuapp.com/user
 Content-Type: application/json
 
 {
@@ -40,4 +40,5 @@ DELETE  http://localhost:3000/60f0e2ae8d06b80ff370c17b
 
 ###
 
-GET http://localhost:3000/allusers
+GET https://expensetrackerbytim.herokuapp.com//allusers
+
