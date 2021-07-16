@@ -15,7 +15,7 @@ db.on("error", (error) => console.error(error));
 db.once("open", () => console.log("Connected to Database"));
 
 let allowedOrigins = [
-  "https:/localhost:3000",
+  "http:/localhost:3000",
   "https://expensetrackerbytim.herokuapp.com/",
 ];
 
