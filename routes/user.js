@@ -42,6 +42,20 @@ router.post("/addtransaction/:id", getUser, async (req, res) => {
   }
 });
 
+//delete transaction
+router.delete("/addtransaction/:id", getUser, async (req, res) => {
+  if (req.body.transaction != null) {
+    res.user.transaction.remove(req.body.transaction);
+  }
+
+  try {
+    const updatedUser = await res.user.save();
+    res.json(updatedUser);
+  } catch (error) {
+    res.status(400).json({ message: error.message });
+  }
+});
+
 //update user info
 router.post("/:id", getUser, async (req, res) => {
   if (req.body.username != null) {
