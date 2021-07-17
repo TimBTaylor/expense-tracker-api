@@ -5,9 +5,9 @@ const app = express();
 const router = express.Router();
 const mongoose = require("mongoose");
 const cors = require("cors");
-const User = require("../models/user");
+const User = require("./models/user");
 
-mongoose.connect(process.env.CONNECTION_URI, {
+mongoose.connect(process.env.DATABASE_URL, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
