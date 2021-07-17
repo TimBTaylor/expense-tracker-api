@@ -14,7 +14,7 @@ GET http://localhost:3000/60f0d1616a8fe40d8aaad754
 
 ###
 
-POST http://localhost:3000/60f0e31750fe7f100c02ec5b/addtransaction
+POST https://expensetrackerbytim.herokuapp.com/expensetracker/addtransaction/60f307c36c574f00150b4919
 Content-Type: application/json
 
 {
@@ -40,5 +40,8 @@ DELETE  http://localhost:3000/60f0e2ae8d06b80ff370c17b
 
 ###
 
-GET https://expensetrackerbytim.herokuapp.com//allusers
+GET https://expensetrackerbytim.herokuapp.com/expensetracker/allusers
 
+###
+
+GET https://expensetrackerbytim.herokuapp.com/expensetracker/transactions/60f307c36c574f00150b4919

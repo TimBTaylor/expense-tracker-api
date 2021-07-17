@@ -28,6 +28,13 @@ router.get("/allusers", async (req, res) => {
   }
 });
 
+//get all transactions
+router.get("/transactions/:id"),
+  getUser,
+  (req, res) => {
+    res.send(user.transacton);
+  };
+
 //add transaction
 router.post("/addtransaction/:id", getUser, async (req, res) => {
   if (req.body.transaction != null) {
