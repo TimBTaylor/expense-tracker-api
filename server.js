@@ -26,4 +26,6 @@ app.use(express.json());
 const userRouter = require("./routes/user");
 
 app.use("/expensetracker", userRouter);
-app.listen(3000, () => console.log("Server started"));
+
+var port = process.env.PORT || 3000;
+app.listen(port, () => console.log("Server started"));
