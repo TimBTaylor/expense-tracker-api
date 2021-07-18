@@ -14,7 +14,7 @@ router.post("/user", async (req, res) => {
     const newUser = await user.save();
     res.status(201).json(newUser);
   } catch (error) {
-    res.status(400).json({ message: "went wrong here" });
+    res.status(400).json({ message: error.message });
   }
 });
 
@@ -51,9 +51,10 @@ router.post("/addtransaction/:id", getUser, async (req, res) => {
 
 //delete transaction
 router.delete("/deletetransaction/:id", getUser, async (req, res) => {
-  if (req.body.transaction != null) {
+  if (req.body != null) {
+    const x = JSON.stringify(req.body.transaction);
     res.user.transaction.filter((transaction) => {
-      transaction.id !== req.body.transaction.id;
+      transaction !== x;
     });
   }
 

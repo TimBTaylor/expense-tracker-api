@@ -19,8 +19,9 @@ Content-Type: application/json
 
 {
     "transaction": {
-        "transactionType": "meijer",
-        "transactionAmount": "-50"
+        "id": "56",
+        "transactionAmount": "1000",
+        "transactionType": "all"
     }
 }
 
@@ -53,8 +54,9 @@ Content-Type: application/json
 
 {
     "transaction": {
-      "id": 45826,
-        "transactionAmount": "400",
-        "transactionType": "no"
+     "id": 49985646,
+     "transactionAmount": "500",
+     "transactionType": "work"
+
     }
 }
