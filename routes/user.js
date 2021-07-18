@@ -52,7 +52,9 @@ router.post("/addtransaction/:id", getUser, async (req, res) => {
 //delete transaction
 router.delete("/deletetransaction/:id", getUser, async (req, res) => {
   if (req.body.transaction != null) {
-    res.user.transaction.remove(req.body.transaction);
+    res.user.transaction.filter((transaction) => {
+      transaction.id !== req.body.transaction.id;
+    });
   }
 
   try {

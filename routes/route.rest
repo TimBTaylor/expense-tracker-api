@@ -45,3 +45,16 @@ GET https://expensetrackerbytim.herokuapp.com/expensetracker/allusers
 ###
 
 GET https://expensetrackerbytim.herokuapp.com/expensetracker/transactions/60f307c36c574f00150b4919
+
+###
+
+DELETE https://expensetrackerbytim.herokuapp.com/expensetracker/deletetransaction/60f307c36c574f00150b4919
+Content-Type: application/json
+
+{
+    "transaction": {
+      "id": 45826,
+        "transactionAmount": "400",
+        "transactionType": "no"
+    }
+}
