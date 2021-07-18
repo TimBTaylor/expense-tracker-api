@@ -41,7 +41,7 @@ DELETE  http://localhost:3000/60f0e2ae8d06b80ff370c17b
 
 ###
 
-GET https://expensetrackerbytim.herokuapp.com/expensetracker/allusers
+GET http://localhost:3000/expensetracker/allusers
 
 ###
 
