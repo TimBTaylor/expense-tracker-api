@@ -14,14 +14,14 @@ GET http://localhost:3000/60f0d1616a8fe40d8aaad754
 
 ###
 
-POST https://expensetrackerbytim.herokuapp.com/expensetracker/addtransaction/60f307c36c574f00150b4919
+POST http://localhost:3000/expensetracker/addtransaction/60f440e29526d3001566cffa
 Content-Type: application/json
 
 {
     "transaction": {
-        "id": "56",
-        "transactionAmount": "1000",
-        "transactionType": "all"
+        "id": 175600399,
+        "transactionAmount": "500",
+        "transactionType": "working"
     }
 }
 
@@ -49,14 +49,13 @@ GET https://expensetrackerbytim.herokuapp.com/expensetracker/transactions/60f307
 
 ###
 
-DELETE https://expensetrackerbytim.herokuapp.com/expensetracker/deletetransaction/60f307c36c574f00150b4919
+POST http://localhost:3000/expensetracker/deletetransaction/60f440e29526d3001566cffa
 Content-Type: application/json
 
 {
     "transaction": {
-     "id": 49985646,
-     "transactionAmount": "500",
-     "transactionType": "work"
-
+        "id": 175600399,
+        "transactionAmount": "500",
+        "transactionType": "working"
     }
 }
